@@ -1,0 +1,105 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #151338;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/***** Card *****/
+.card {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px 10px #888;
+}
+
+.card__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card__description {
+    flex-grow: 1;
+}
+
+.card__title {
+    margin: 0;
+}
+
+.card__title:hover {
+    cursor: pointer;
+}
+
+.card__rating {
+    display: flex;
+    font-size: 12px;
+    column-gap: 15px;
+    color: #f3c117;
+    margin-top: 5px;
+}
+
+.card__rating--votes {
+    color: gray;
+}
+
+.card__cost {
+    margin: 10px 0;
+}
+
+.card__cost--rupee {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__desc {
+    margin: 10px 0;
+    font-size: 14px;
+    max-width: 450px;
+    color: rgb(128, 128, 128);
+}
+
+.card__desc--link {
+    color: #4c4c4c;
+}
+
+.card__desc--link:hover {
+    color: #353535;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card__button--add {
+    padding: 8px 15px;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+}
+
+.card__button--add:hover {
+    background-color: rgb(46, 112, 255);
+    color: whitesmoke;
+
+}
+
+/***** End Card *****/
